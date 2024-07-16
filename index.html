@@ -7,7 +7,7 @@
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.45/moment-timezone-with-data-1970-2030.min.js"></script>
-  <link href="stylesheet" src="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="container">
@@ -15,35 +15,36 @@
 
  <hr>
 
-<select>
-<option value="">Select country:</option>
+<select id="cities">
+<option value="">Select city:</option>
 <option value="Africa/Johannesburg">Johannesburg</option>
 <option value="America/New_York">New_York</option>
 <option value="Europe/London">London</option>
 </select>
 
-<div class="cities">
-  
-  <div id="Johannesburg">
-    <h1>Johannesburg</h1>
-    <div class="time"></div>
-  </div> 
+<div class="city">
 
-  <div id="New_York">
-    <h1>New_York</h1>
-    <div class="time"></div>
-  </div> 
 
-  <div id="London">
-    <h1>London</h1>
-    <div class="time"></div>
-  </div> 
-</div>
+   <div>
+   <h2>Johannesburg</h2>
+    <div class="date">August 15th 2022</div>
   </div>
+  <div class="time">1:48:15 <small> AM </small></div>
+</div>
+<div class="city">
 
+  <div>
+    <h2>New_York</h2>
+    <div class="date">August 15th 2022</div>
+  </div>
+  <div class="time">1:48:15 <small> AM </small></div>
+</div>
+</div>
   <hr>
   <footer>
    <p>This project was coded by Lutendo Malema and is on <a href=""> Github </a></p>
   </footer>
+
+  <script src="index.js"></script>
 </body>
 </html>
