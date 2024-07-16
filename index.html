@@ -10,41 +10,44 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="container">
- <h1>World clock</h1>
 
- <hr>
+ <div class="container">
+  <h1>World Clock</h1>
 
-<select id="cities">
-<option value="">Select city:</option>
-<option value="Africa/Johannesburg">Johannesburg</option>
-<option value="America/New_York">New_York</option>
-<option value="Europe/London">London</option>
-</select>
+  <select id="city">
+    <option value="">Select a city..</option>
+    <option value="current">My current location</option>
+    <option value="Africa/Johannesburg">Johannesburg</option>
+    <option value="Europe/London">London</option>
+    <option value="Asia/Tokyo">Tokyo</option>
+  </select>
 
-<div class="city">
+  <div id="cities">
+
+    <div class="city" id="johannesburg">
+      <div>
+        <h2>Johannesburg</h2>
+        <div class="date"></div>
+      </div>
+      <div class="time"></div>
+    </div>
 
 
-   <div>
-   <h2>Johannesburg</h2>
-    <div class="date">August 15th 2022</div>
-  </div>
-  <div class="time">1:48:15 <small> AM </small></div>
-</div>
-<div class="city">
+    <div class="city" id="london">
+      <div>
+        <h2>London</h2>
+        <div class="date"></div>
+      </div>
+      <div class="time"></div>
+    </div>
 
-  <div>
-    <h2>New_York</h2>
-    <div class="date">August 15th 2022</div>
-  </div>
-  <div class="time">1:48:15 <small> AM </small></div>
-</div>
-</div>
-  <hr>
+    </div>
+
   <footer>
-   <p>This project was coded by Lutendo Malema and is on <a href=""> Github </a></p>
+   <p>This project was coded by <a href="https://github.com/itxLuu"></a>Lutendo Malema </a> and is on <a href="https://github.com/itxLuu/World-app-timezones-project"> Github </a>
+  <br> and is hoisted on Netlify <a href=""></a></p>
   </footer>
-
+</div>
   <script src="index.js"></script>
 </body>
 </html>
